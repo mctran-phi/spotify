@@ -31,21 +31,23 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
 
   return (
     <div className="flex h-full">
-      <div className="hidden
+      <div className="
+        hidden
         md:flex
         flex-col
         gap-y-2
       bg-black
         h-full
         w-[300px]
-        p-2">
+        p-2
+      ">
         <Box>
           <div className="
-          flex
-          flex-col
-          gap-y-4
-          px-5
-          py-4
+            flex
+            flex-col
+            gap-y-4
+            px-5
+            py-4
           ">
             {routes.map((item) => (
               <SidebarItem
