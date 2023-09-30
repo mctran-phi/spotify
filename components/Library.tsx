@@ -30,25 +30,26 @@ const Library = () => {
           ">
             Library
           </p>
-          <AiOutlinePlus 
-            onClick={onClick}
-            size={20}
-            className="
-              text-neutral-400
-              cursor-pointer
-              hover:text-white
-              transition"
-          />
-          <div className="
-            flex
-            flex-col
-            gap-y-2
-            mt-4
-            px-3
-          ">
-            Songs List
-          </div>
         </div>
+        <AiOutlinePlus 
+          onClick={onClick}
+          size={20}
+          className="
+            text-neutral-400
+            cursor-pointer
+            hover:text-white
+            transition
+          "
+        />
+      </div>
+      <div className="
+        flex
+        flex-col
+        gap-y-2
+        mt-4
+        px-3
+      ">
+        Song List
       </div>
     </div>
   );
