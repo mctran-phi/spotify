@@ -6,6 +6,7 @@ import LikeButton from "./LikeButton";
 import MediaItem from "./MediaItem";
 import { AiFillStepBackward, AiFillStepForward } from "react-icons/ai";
 import { HiSpeakerXMark, HiSpeakerWave } from "react-icons/hi2";
+import Slider from "./Slider";
 
 interface PlayerContentProps {
   song: Song;
@@ -105,6 +106,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
             size={34}
             className="cursor-pointer"
           />
+          <Slider />
         </div>
       </div>
     </div>
