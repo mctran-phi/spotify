@@ -3,6 +3,7 @@ import { IoMdClose } from "react-icons/io";
 
 interface ModalProps {
   isOpen: boolean;
+  onClose: () => void;
   onChange: (open: boolean) => void;
   title: string;
   description: string;
@@ -11,11 +12,18 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({
   isOpen,
+  onClose,
   onChange,
   title,
   description,
   children
 }) => {
+  const handleClose = () => {
+    if (isOpen) {
+      onClose();
+    }
+  }
+
   return (
     <Dialog.Root
       open={isOpen}
@@ -85,7 +93,7 @@ const Modal: React.FC<ModalProps> = ({
               rounded-full
               focus:outline-none
             ">
-              <IoMdClose />
+              <IoMdClose onClick={handleClose}/>
             </button>
           </Dialog.Close>
         </Dialog.Content>
