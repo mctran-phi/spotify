@@ -104,6 +104,7 @@ const UploadModal = () => {
       description="Upload a mp3 file"
       isOpen={uploadModal.isOpen}
       onChange={onChange}
+      onClose={uploadModal.onClose}
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
