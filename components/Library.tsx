@@ -21,7 +21,7 @@ const Library: React.FC<LibraryProps> = ({ songs }) => {
 
   const onClick = () => {
     if (!user) {
-      return authModal.onOpen();
+      return authModal.onLogin();
     }
 
     return uploadModal.onOpen();
