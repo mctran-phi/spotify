@@ -10,7 +10,7 @@ const useOnPlay = (songs: Song[]) => {
 
   const onPlay = (id: string) => {
     if (!user) {
-      return authModal.onOpen();
+      return authModal.onLogin();
     }
 
     player.setId(id);
